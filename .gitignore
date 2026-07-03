@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── FotoQu: data & bobot model ──────────────────────────────────────
+# Foto mentah & hasil olahan tidak di-push (besar / privasi subjek).
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Bobot model (InsightFace buffalo_l, CodeFormer, GFPGAN)
+*.onnx
+*.pth
+weights/
+pretrained/
