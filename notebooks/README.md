@@ -8,3 +8,6 @@ Colab notebooks eksperimen (`.ipynb`).
 - **`EXP_*`** = eksperimen terisolasi / titik pembanding (mis. enhancement
   classical vs restorasi deep learning). **Bukan** bagian rantai pipeline utama;
   sekali-jalan pada subset kecil.
+- **`LABEL_*`** = alat labeling/verifikasi manusia. `LABEL_Cluster_Verification`
+  memverifikasi cluster HDBSCAN NB05 (contact-sheet) dengan mekanisme merge/split,
+  resumable, menghasilkan `face_labels_verified.csv` (ground-truth untuk Purity/ARI/NMI).
