@@ -148,7 +148,9 @@ Storage    : Google Drive (dataset), GitHub (code)
 
 ## Status Implementasi
 
-- [x] Face Detection (InsightFace, dengan gate det_score ≥ 0.5)
+- [x] Face Detection (InsightFace, det_thresh=0.35 — diturunkan dari
+      default 0.5 agar wajah kecil/bersudut ekstrem di foto grup tetap
+      terdeteksi; tidak ada gate det_score tambahan pasca-deteksi)
 - [x] FQA: Blur, Resolusi, Illumination, Noise (tervalidasi)
 - [x] FQA: Pose (terimplementasi, validasi terbatas — catat keterbatasan)
 - [x] Skor komposit FQA (placeholder weights, belum dikalibrasi)
